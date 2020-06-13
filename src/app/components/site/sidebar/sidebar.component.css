@@ -1,0 +1,37 @@
+#sidebar {
+    max-width: 280px;
+    background-color: var(--primary);
+    height: 100%;
+    padding-top: 20px;
+  }
+  
+  .link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 20px 15px 20px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .link span {
+    margin: 0px 20px;
+  }
+  
+  .active {
+    border-left: 5px solid var(--accent);
+    padding: 20px 10px 20px;
+    background-color: var(--primary2);
+  }
+  
+  .link:hover:not(.active) {
+    background-color: var(--accent);
+    color: white;
+  }
+  
+  /* Misc */
+  .fa-tablet {
+    width: 16px;
+    text-align: center;
+  }
+  

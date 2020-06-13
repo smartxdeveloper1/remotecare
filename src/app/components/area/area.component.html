@@ -1,0 +1,57 @@
+<mat-card align="center">
+    <h4 align="center">AREA CODE HIERARCHY</h4>
+    <form [formGroup]="area" (ngSubmit)="onSubmit()">
+
+        <!-- <mat-form-field>
+            <mat-label> Hierarchy Level</mat-label>
+            <mat-select formControlName="type" name="type" [(ngModel)]="selected" required>
+                
+                <mat-option *ngFor="let type of type" [value]="type">
+                    {{type}}
+                </mat-option>
+            </mat-select>
+
+
+        </mat-form-field> -->
+       
+        <!-- <mat-icon (click)="addnewarea()">add</mat-icon> -->
+        <button mat-raised-button>Add
+            <mat-icon (click)="addnewarea()">add</mat-icon> </button>
+
+        <div formArrayName="level">
+
+
+
+
+            <div *ngFor="let mob of getarea.controls;let i=index">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6" style="margin-left: 132px;">
+
+                        <mat-form-field  style="margin-right: 20px;">
+                            <mat-label> Hierarchy Level</mat-label>
+                            <mat-select [formControlName]="i" name="type" required>
+                                <mat-option *ngFor="let type of type" [value]="type">
+                                    {{type}}
+                                </mat-option>
+                            </mat-select>
+
+                        </mat-form-field>&nbsp;
+                            <mat-icon (click)="remove(i)" style="margin-right:230px;margin-top: 10px;">delete</mat-icon>
+    
+                        
+                       
+                    </div>
+                    <!-- <div class="col-md-3 " >
+                        <mat-icon (click)="remove(i)" style="margin-right:230px;margin-top: 10px;">delete</mat-icon>
+
+                    </div> -->
+                </div>
+              
+
+            </div>
+           
+        </div>
+        <button type="submit" mat-raised-button style="margin-top: 50px;">Register</button>
+    </form>
+</mat-card>

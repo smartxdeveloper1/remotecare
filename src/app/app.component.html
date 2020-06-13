@@ -1,0 +1,154 @@
+<div [ngSwitch]="router.url">
+  <div *ngSwitchCase="'/login'" class="background example-container">
+
+    <app-login></app-login>
+  </div>
+  <div *ngSwitchCase="'/document'" class="background example-container">
+
+    <app-document></app-document>
+  </div>
+
+  <!-- 
+<div  *ngSwitchDefault #dashboard class="example-container" [class.alternative]="istrue" [class.example-is-mobile]="mobileQuery.matches"
+  >
+  <mat-toolbar color="primary" class="example-toolbar">
+
+    <button mat-icon-button class="mat-icon-button" (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1 class="example-app-name">REMOTE CARE</h1>
+    <h2 align="right" routerLink="/login" *ngIf="!service.isLoggedIn()" routerLinkActive="active">Login</h2>
+    <h3 align="right" routerLink="/register" *ngIf="!service.isLoggedIn()" routerLinkActive="active">Register</h3>
+    <span _ngcontent-biy-c0="" class="example-fill-remaining-space"></span>
+
+    <button mat-icon-button [matMenuTriggerFor]="themeMenu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #themeMenu="matMenu" style="min-height: 100px;">
+      <mat-radio-group [(ngModel)]="theme" (change)="changeColor()" style="display: flex; flex-direction: column;">
+        <mat-radio-button class="theme-radio-button" value='blue'>
+          <span>Blue</span>
+        </mat-radio-button>
+        <mat-radio-button class="theme-radio-button" value='green'>
+          <span>Green</span>
+        </mat-radio-button>
+        <mat-radio-button class="theme-radio-button" value='#3f51b5'>
+          <span>Deep Blue</span>
+        </mat-radio-button>
+      </mat-radio-group>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="menu">{{service.getUserInfo('userName')}}
+      <mat-icon style="margin-top: 5px">arrow_drop_down</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" xPosition="before">
+      <button _ng-content-rql-c0 mat-menu-item>User Id:{{service.getUserInfo('userId')}}</button>
+      <button _ng-content-rql-c0 mat-menu-item>User Type:{{service.getUserInfo('userType')}}</button>
+      <button  *ngIf="user()"  _ng-content-rql-c0 mat-menu-item  routerLink="/myprofile">My Profile</button>
+      <button _ng-content-rql-c0 mat-menu-item routerLink="/helpandsupport">Help and Support</button>
+    </mat-menu>
+
+
+    <span _ngcontent-mci-c0="">
+      <mat-icon _ngcontent-mci-c0="" class="logout mat-icon notranslate material-icons mat-icon-no-color"
+        *ngIf="service.isLoggedIn()" (click)="logout()" mat-menu-align-target="" matsuffix="" role="img"
+        aria-hidden="true">logout</mat-icon>
+    </span>
+
+  </mat-toolbar>
+
+
+
+
+  <mat-sidenav-container class="example-sidenav-container" [ngClass]="{'example-sidenav-container':true}"
+    [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" opened class="example-sidenav"
+      [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+
+      <mat-nav-list>
+
+        <a mat-list-item routerLink="/home" routerLinkActive="active-list-item"
+          (click)="mobileQuery.matches?snav.toggle():false"
+          style="border-bottom-style: outset;border-bottom-width: 1px;">
+          <mat-icon>home</mat-icon>&nbsp;&nbsp;&nbsp;HOME
+        </a>
+
+        <a mat-list-item routerLink="/dashboard" routerLinkActive="active-list-item"
+          (click)="mobileQuery.matches?snav.toggle():false"
+          style="border-bottom-style: outset;border-bottom-width: 1px;">
+          <mat-icon>dashboard</mat-icon>&nbsp;&nbsp;&nbsp;DASHBOARD
+        </a>
+        <a mat-list-item  routerLinkActive="active-list-item" routerLink="/view"
+          (click)="mobileQuery.matches?snav.toggle():false"
+          style="border-bottom-style: outset;border-bottom-width: 1px;">
+          <mat-icon>memory</mat-icon>&nbsp;&nbsp;&nbsp;DEVICES
+        </a>
+        <a mat-list-item routerLink="/view-service" *ngIf="showMenu()" routerLinkActive="active-list-item"
+          (click)="mobileQuery.matches?snav.toggle():false"
+          style="border-bottom-style: outset;border-bottom-width: 1px;">
+          <mat-icon>group</mat-icon>&nbsp;&nbsp;&nbsp;ORGANISATION UNIT
+        </a>
+        <a mat-list-item *ngIf="showMenu()" routerLink="/view-user" routerLinkActive="active-list-item"
+          (click)="mobileQuery.matches?snav.toggle():false"
+          style="border-bottom-style: outset;border-bottom-width: 1px;">
+          <mat-icon>person</mat-icon>&nbsp;&nbsp;&nbsp;USERS
+        </a>
+        <a mat-list-item *ngIf="user()" routerLink="/view-user" routerLinkActive="active-list-item"
+          (click)="mobileQuery.matches?snav.toggle():false"
+          style="border-bottom-style: outset;border-bottom-width: 1px;">
+          <mat-icon>person</mat-icon>&nbsp;&nbsp;&nbsp;SERVICE PROVIDER &nbsp;&nbsp;&nbsp;REGISTRATION
+        </a>
+        <a mat-list-item *ngIf="user()" routerLink="/view-map" routerLinkActive="active-list-item"
+          (click)="mobileQuery.matches?snav.toggle():false"
+          style="border-bottom-style: outset;border-bottom-width: 1px;">
+          <mat-icon> transfer_within_a_station</mat-icon>&nbsp;&nbsp;&nbsp;ALLOCATION DEVICE TO
+          &nbsp;&nbsp;&nbsp;PROVIDER
+        </a>
+        <a mat-list-item *ngIf="showMenu()" routerLink="/view-assign" routerLinkActive="active-list-item"
+          (click)="mobileQuery.matches?snav.toggle():false"
+          style="border-bottom-style: outset;border-bottom-width: 1px;">
+          <mat-icon>input</mat-icon>&nbsp;&nbsp;&nbsp;ASSIGN DEVICE
+        </a> -->
+  <!-- <a mat-list-item routerLink="/area" *ngIf="user()" routerLinkActive="active-list-item"
+          (click)="mobileQuery.matches?snav.toggle():false"
+          style="border-bottom-style: outset;border-bottom-width: 1px;">
+          <mat-icon>flag</mat-icon>&nbsp;&nbsp;&nbsp;AREA &nbsp;&nbsp;&nbsp;CODE &nbsp;&nbsp;&nbsp;HIERARCHY
+        </a> -->
+  <!-- <a mat-list-item routerLink="/maintanence" (click)="mobileQuery.matches?snav.toggle():false" style="border-bottom-style: outset;border-bottom-width: 1px;"><mat-icon>work</mat-icon>&nbsp;&nbsp;&nbsp;MAINTANENCE</a>
+   -->
+
+
+  <!-- 
+      </mat-nav-list>
+
+    </mat-sidenav> -->
+
+  <!-- <mat-sidenav-content>
+    <ngx-spinner size="medium" color="#fff" type="ball-scale-multiple">
+      <p style="font-size: 20px; color: white">Loading...</p>
+    </ngx-spinner>
+    <div class="container pt-5">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</div>
+
+</div> -->
+
+<div  *ngSwitchDefault #dashboard class="box">
+  <div id="logo">
+    <app-logo></app-logo>
+  </div>
+  <div id="topbar">
+    <app-topbar></app-topbar>
+  </div>
+  <div id="sidebar">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div id="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+</div>

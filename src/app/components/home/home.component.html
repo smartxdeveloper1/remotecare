@@ -1,0 +1,186 @@
+<!-- <div class="center" style="margin-top: 50px;">
+   
+    <div class="row">
+
+        <div class="col-md-3 griddiv">
+            <mat-card class="text-center">
+                <mat-card-header class="heading" style="display: block;">
+                    <mat-icon >dashboard</mat-icon>
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                        gray;">
+                <mat-card-content class="footer" routerLink="/dashboard">
+                    Dashboard
+                </mat-card-content>
+            </mat-card>
+
+        </div>
+        <div class="col-md-3 griddiv">
+
+            <mat-card *ngIf="showuser()" class=" text-center">
+                <mat-card-header class="heading" style="display: block;">
+                    <mat-icon >memory</mat-icon>
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                        gray;">
+                <mat-card-content class="footer"  routerLink="/view">
+                    Devices
+                </mat-card-content>
+            </mat-card>
+            <mat-card *ngIf="user()" class="text-center">
+                <mat-card-header class="heading" style="display: block;">
+                    <mat-icon>home</mat-icon>
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                        gray;">
+                <mat-card-content class="footer" routerLink="/home">
+                    home
+                </mat-card-content>
+            </mat-card>
+
+        </div>
+        <div class="col-md-3 griddiv">
+
+            <mat-card class=" text-center">
+                <mat-card-header class="heading" style="display: block;">
+                    <mat-icon>group</mat-icon>
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                        gray;">
+                <mat-card-content class="footer" routerLink="/view-service">
+                    Organisation unit
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+       
+        <div class="col-md-3 griddiv">
+            <mat-card *ngIf="showMenu()" class="text-center">
+                <mat-card-header class="heading" style="display: block;">
+                    <mat-icon >person</mat-icon>
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                        gray;">
+                <mat-card-content class="footer" routerLink="/view-user">
+                    Users
+                </mat-card-content>
+            </mat-card>
+            <mat-card *ngIf="user()" class="text-center">
+                <mat-card-header class="heading" style="display: block;">
+                    <mat-icon >person</mat-icon>
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                        gray;">
+                <mat-card-content class="footer"  routerLink="/view-user">
+                    Service provider
+                </mat-card-content>
+            </mat-card>
+
+        </div>
+        <div class="col-md-3 griddiv">
+            <mat-card *ngIf="user()" class="text-center">
+                <mat-card-header class="heading" style="display: block;">
+                    <mat-icon >transfer_within_a_station</mat-icon>
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                        gray;">
+                <mat-card-content class="footer" routerLink="/view-map">
+                    Allocate device
+                </mat-card-content>
+            </mat-card>
+            <mat-card *ngIf="showMenu()" class="text-center">
+                <mat-card-header class="heading" style="display: block;">
+                    <mat-icon>input</mat-icon>
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                        gray;">
+                <mat-card-content class="footer" routerLink="/view-assign">
+                    Assign device
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="col-md-3 griddiv">
+            <mat-card *ngIf="code()" class="text-center">
+                <mat-card-header class="heading" style="display: block;">
+                    <mat-icon>flag</mat-icon>
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                        gray;">
+                <mat-card-content class="footer"  routerLink="/view-country">
+                    Country Code
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+
+    </div>
+   
+</div>  -->
+<div class="card-container" style="margin-top: 50px;">
+    <div class="top-cards">
+        <div class="card">
+            <h2 class="cardTitle">Dashboard</h2>
+            <div class="squareHolder">
+                <div class="iconHolder">
+                    <mat-icon routerLink="/dashboard" style="font-size: 65px;color: white;">dashboard</mat-icon>
+                </div>
+                <div class="iconHolder">
+                    <mat-icon routerLink="/dashboard" style="font-size: 65px;color: white;">view_list</mat-icon>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <h2 class="cardTitle">Devices</h2>
+            <div class="squareHolder">
+                <div class="iconHolder">
+                    <mat-icon routerLink="/add" style="font-size: 65px;color: white;">add_to_queue</mat-icon>
+                </div>
+                <div class="iconHolder">
+                    <mat-icon routerLink="/view" style="font-size: 65px;color: white;">view_list</mat-icon>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <h2 class="cardTitle">Organisation</h2>
+            <div class="squareHolder">
+                <div class="iconHolder">
+                    <mat-icon routerLink="/add-service" style="font-size: 65px;color: white;">add_to_queue</mat-icon>
+                </div>
+                <div class="iconHolder">
+                    <mat-icon routerLink="/view-service" style="font-size: 65px;color: white;">view_list</mat-icon>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="bottom-cards">
+    <div class="card">
+        <h2 class="cardTitle">Users</h2>
+        <div class="squareHolder">
+            <div class="iconHolder">
+                <mat-icon routerLink="/add-user" style="font-size: 65px;color: white;">add_to_queue</mat-icon>
+            </div>
+            <div class="iconHolder">
+                <mat-icon routerLink="/view-user" style="font-size: 65px;color: white;">view_list</mat-icon>
+            </div>
+        </div>
+       
+    </div>
+    <div class="card">
+        <h2 class="cardTitle">Assign Devices</h2>
+        <div class="squareHolder">
+            <div class="iconHolder">
+                <mat-icon routerLink="/add-assign" style="font-size: 65px;color: white;">add_to_queue</mat-icon>
+            </div>
+            <div class="iconHolder">
+                <mat-icon routerLink="/view-assign" style="font-size: 65px;color: white;">view_list</mat-icon>
+            </div>
+        </div>
+       
+    </div>
+</div>

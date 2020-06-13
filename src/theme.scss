@@ -1,0 +1,60 @@
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+button:focus{
+    outline: 0;
+}
+
+$primary: var(--primary-color);
+.mat-toolbar.mat-primary {
+    background: $primary;
+    color: #fff;
+}
+.mat-icon.mat-primary {
+    color: $primary;
+}
+
+.mat-drawer {
+    background: $primary !important;
+}
+h1 {
+    color: white;
+}
+
+.container  .material-icons{
+    color: $primary;
+}
+.active-list-item {
+    background-color: grey !important;
+}
+.overlay{
+    top: auto !important;
+}
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  /* //Hanblue- card background */
+  --primary: #3d72de;
+  /* //sunglow- goldish */
+  --accent: #ffd14f;
+  /* //Icon color for card */
+  --primary2: #265abf;
+  /* //Icon background for card */
+  --accent2: #7ea6f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: white;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+

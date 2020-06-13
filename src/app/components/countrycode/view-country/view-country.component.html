@@ -1,0 +1,22 @@
+<!-- <div>
+    <button mat-stroked-button  routerLink="/add-country" style="margin-bottom: 30px">Add
+      Country Code</button>
+  </div> -->
+
+  <div class="row">
+  <div style="width: 230px;" class="col-md-3 griddiv" >
+    <mat-card *ngFor="let code of code">{{code.countryCode}}</mat-card>
+
+    
+  
+  
+    </div>
+  </div>
+
+  <div class="float">
+    <mat-icon routerLink="/add-country"
+            matTooltip="Add Country"
+            aria-label="Button that displays a tooltip when focused or hovered over">
+      add
+    </mat-icon>
+    </div>

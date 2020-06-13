@@ -1,0 +1,12 @@
+.mat-card{
+    width: 200px;
+    height: 150px;
+    text-decoration-color: #3f51b5;
+    left: 40%;
+}
+.mat-card-header{
+    color:cornflowerblue
+}
+.mat-icon{
+    font-size: xx-large;
+}

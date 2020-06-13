@@ -1,0 +1,203 @@
+
+
+
+<div class="center" style="margin-right: 140px;">
+    
+    <div class="row" style="margin-top: 100px;">
+       
+        <div class="col-md-3">
+            <mat-card *ngIf="user" class="text-center" style="height: 230px;">
+                <mat-card-header class="heading" style="display: block;">
+                    DEVICES
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                    gray;">
+                <mat-card-content class="footer" style="color: cornflowerblue;">
+                    <li style="display: flex;color: black;">Total Devices-{{devices.totalNo}}</li>
+                  
+                  
+                    <li style="display: flex;color: cornflowerblue;">Total Assigned</li>
+                    <li style="display: flex;color: black;">Active Devices-</li>
+                    <li style="display: flex;">{{devices.active}}</li>
+                    <li style="display: flex;color: black;">Inactive Devices-</li>
+                    <li style="display: flex;">{{devices.notActive}}</li>
+
+
+                </mat-card-content>
+
+
+
+
+
+            </mat-card>
+            <mat-card *ngIf="!user" class="text-center" style="height: 300px;width: 250px;">
+                <mat-card-header class="heading" style="display: block;">
+                    DEVICES
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                    gray;">
+                <mat-card-content class="footer" style="color: cornflowerblue;">
+                    <li style="display: flex;color: black;">Total Devices-{{devices.totalNo}}</li>
+                    
+                    
+                    <li style="display: flex;color:cornflowerblue;">Total Assigned</li>
+                    <li style="display: flex;color: black;">Active Devices-</li>
+                    <li style="display: flex;">{{devices.active}}</li>
+                    <li style="display: flex;color: black;">Inactive Devices-</li>
+                    <li style="display: flex;">{{devices.notActive}}</li>
+
+
+
+
+                </mat-card-content>
+
+
+            </mat-card>
+
+        </div>
+        <div class="col-md-3">
+
+            <mat-card *ngIf="!user" class="text-center" style="width: 250px;height: 300px;">
+                <mat-card-header class="heading" style="display: block;">
+                    USERS
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                    gray;">
+                <mat-card-content class="footer" style="color: cornflowerblue;">
+
+
+                    <li style="display: flex;color: black;">Total Users-</li>
+                    <li style="display: flex;">{{users.totalNo}}</li>
+
+
+                    <li style="display: flex;color: black;">Admins-</li>
+                    <li style="display: flex;">{{users.totalAdmin}}</li>
+                    <li style="display: flex;color: black;">Service Providers-</li>
+                    <li style="display: flex;">{{users.totalServiceProvider}}</li>
+                    <li style="display: flex;color: black;">Smartx Engineer-</li>
+                    <li style="display: flex;">{{users.totalEngineer}}</li>
+                    <li style="display: flex;color: black;">Patients-</li>
+                    <li style="display: flex;">{{users.totalPatient}}</li>
+
+
+                </mat-card-content>
+
+
+            </mat-card>
+            <mat-card *ngIf="user" class="text-center" style="height: 230px;">
+                <mat-card-header class="heading" style="display: block;">
+                    SERVICE PROVIDERS
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                    gray;">
+
+                <mat-card-content *ngIf="user" class="footer" style="color: cornflowerblue;">
+                    <li style="display: flex;color: black;">Total Service Providers-</li>
+                    <li style="display: flex;">{{serviceProvider.totalNo}}</li>
+                    <li style="display: flex;color: black;">Service Providers-</li>
+                    <li style="display: flex;">{{serviceProvider.active}}</li>
+
+                    <li style="display: flex;color: black;">Patients-</li>
+                    <li style="display: flex;">{{serviceProvider.notActive}}</li>
+
+
+                </mat-card-content>
+
+
+            </mat-card>
+        </div>
+        <div class="col-md-3">
+
+            <mat-card *ngIf="!user" class="text-center" style="width: 250px;height: 300px;">
+                <mat-card-header class="heading" style="display: block;">
+                    PATIENTS
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                    gray;">
+                <mat-card-content class="footer" style="color: cornflowerblue;">
+
+
+                    <li style="display: flex;color: black;">Total Patients-{{Patients.totalNo}}</li>
+                   <li style="display: flex;color: cornflowerblue;">Wearable</li>
+                   
+                    <li style="display: flex;color: black;">Current Patients-</li>
+                    <li style="display: flex;">{{Patients.active}}</li>
+                    <li style="display: flex;color: black;">Past Patients-</li>
+                    <li style="display: flex;">{{Patients.notActive}}</li>
+                 
+
+                </mat-card-content>
+
+
+            </mat-card>
+            <mat-card *ngIf="user" class="text-center" style="height: 230px;">
+                <mat-card-header class="heading" style="display: block;">
+                    PATIENTS
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                    gray;">
+
+                <mat-card-content *ngIf="user" class="footer" style="color: cornflowerblue;">
+                    <li style="display: flex;color: black;">Total Patients-{{Patients.totalNo}}</li>
+
+                    <li style="display: flex;color: cornflowerblue;">Wearable</li>
+                  
+                    <li style="display: flex;color: black;">Current Patients-</li>
+                    <li style="display: flex;">{{Patients.active}}</li>
+                    <li style="display: flex;color: black;">Past Patients-</li>
+                    <li style="display: flex;">{{Patients.notActive}}</li>
+                 
+
+                </mat-card-content>
+
+
+            </mat-card>
+        </div>
+        <div class="col-md-3">
+
+            <mat-card *ngIf="!user" class="text-center" style="width: 250px;height: 300px;">
+                <mat-card-header class="heading" style="display: block;">
+                    ALERTS
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                    gray;">
+                <mat-card-content class="footer" style="color: cornflowerblue;">
+
+
+                    <li style="display: flex;color: black;">Total Alerts-</li>
+                    <li style="display: flex;">{{alert.totalNo}}</li>
+
+
+                
+                    <li style="display: flex;color: black;">Red Alerts-</li>
+                    <li style="display: flex;">{{alert.redAlert}}</li>
+                  
+
+                </mat-card-content>
+
+
+            </mat-card>
+            <mat-card *ngIf="user" class="text-center" style="height: 230px;">
+                <mat-card-header class="heading" style="display: block;">
+                    ALERTS
+                </mat-card-header>
+                <hr style="width:10;height:0.1px;background-color: gray;border-top-color: 
+                    gray;">
+
+                <mat-card-content *ngIf="user" class="footer" style="color: cornflowerblue;">
+                    <li style="display: flex;color: black;">Total Alerts-</li>
+                    <li style="display: flex;">{{alert.totalNo}}</li>
+
+
+                
+                    <li style="display: flex;color: black;">Red Alerts-</li>
+                    <li style="display: flex;">{{alert.redAlert}}</li>
+                 
+
+                </mat-card-content>
+
+
+            </mat-card>
+        </div>
+    </div>
+</div>

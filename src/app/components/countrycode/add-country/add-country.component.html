@@ -1,0 +1,15 @@
+<mat-card align="center">
+    <h4 align="center">Country Code Registration</h4>
+    <form [formGroup]="countryform" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-md-6">
+                <mat-form-field >
+                    <mat-label>Country Code</mat-label>
+                    <input type="number" matInput formControlName="countryCode" autocomplete="off" required>
+                </mat-form-field>
+            </div>
+            </div>
+            <button type="submit" mat-raised-button
+            [disabled]="countryform.pristine || countryform.invalid">Register</button>
+            </form>
+            </mat-card>

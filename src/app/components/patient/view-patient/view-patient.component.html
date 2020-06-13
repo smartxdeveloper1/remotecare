@@ -1,0 +1,51 @@
+<div>
+    <button mat-stroked-button routerLink="/add-patient" style="margin-bottom: 30px">Add Patient</button>
+  </div>
+  <div>
+  <mat-form-field style="float: right;width:auto" class="border-success">
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Ex. Mia">
+  </mat-form-field>
+  
+  <div _ngcontent-etd-c17
+class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort>
+  
+      <!-- ID Column -->
+      <ng-container matColumnDef="dateTimeOfInstallation">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> dateTimeOfInstallation </th>
+        <td mat-cell *matCellDef="let row"> {{row.dateTimeOfInstallation}} </td>
+      </ng-container>
+  
+      <!-- Progress Column -->
+      <ng-container matColumnDef="installerServiceId">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> installerServiceId </th>
+        <td mat-cell *matCellDef="let row"> {{row.installerServiceId}} </td>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="userId">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> userid </th>
+        <td mat-cell *matCellDef="let row"> {{row.userId}} </td>
+      </ng-container>
+  
+      <!-- Color Column -->
+      <ng-container matColumnDef="deviceId">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> deviceid </th>
+        <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.deviceId}} </td>
+      </ng-container>
+      <ng-container matColumnDef="dateTimeOfUninstallation">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> dateofUninstall </th>
+        <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.dateTimeOfUninstallation}} </td>
+      </ng-container>
+      
+      
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+      </tr>
+    </table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+  </div>
+  </div>

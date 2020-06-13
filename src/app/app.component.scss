@@ -1,0 +1,126 @@
+
+// .mat-menu-trigger{
+//     margin-bottom: 5px;
+//   }
+//   .example-container {
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     background: rgb(238, 238, 238);
+//   }
+//   .mat-drawer{
+//       background-color:#3f51b5;
+//       text-decoration-color: white;
+      
+//       color: white;
+//       width: 150px;
+  
+//   }
+//   .mat-list-item{
+//       text-decoration-color: white;
+//       color:white;
+//   }
+  
+//   .example-container {
+//     display: flex;
+//     flex-direction: column;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     cursor: pointer;
+//   }
+  
+//   .example-is-mobile .example-toolbar {
+//     position: fixed;
+   
+//     z-index: 2;
+//   }
+  
+//   h1.example-app-name {
+//     margin-left: 8px;
+//   }
+  
+  
+//   .example-sidenav-container {
+   
+//     flex: 1;
+//   }
+  
+//   .example-is-mobile .example-sidenav-container {
+//     flex: 1 0 auto;
+//   }
+//   .mat-nav-list{
+//    margin-top: 10px;
+//   } 
+//   .mat-icon-button{
+//    color:white;
+//    background:none;
+//    border: none;
+//    margin-top: 12px;
+  
+//   }
+  
+//   .mat-header {
+//     align-items: center;
+//   }
+//   .mat-table cdk-table mat-sort{
+//       width:100%
+//   }
+//   .mat-drawer-content{
+//     background:white;
+//   }
+//   .mat-icon{
+//     margin-bottom: 10px;
+//   }
+//   .example-fill-remaining-space{
+//     -webkit-box-flex: 1;
+//       flex: 1 1 auto;
+//   }
+  
+//   .example-sidenav{
+//     width :250px;
+//   }
+  
+//   .theme-radio-button{
+//     padding: 10px;
+//   }
+  
+//   $primary: var(--primary-color);
+//   .mat-toolbar.mat-primary {
+//       background: $primary;
+//       color: #fff;
+//   }
+
+.box {
+  // height: 400%;
+  display: grid;
+  grid-template-areas:
+    "logo topbar"
+    "sidebar dynamicContent";
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: 100px 1fr;
+}
+
+#logo {
+  grid-area: logo;
+  background-color: var(--primary);
+}
+
+#topbar {
+  grid-area: topbar;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+// #content {
+//   grid-area: dynamicContent;
+// }
+
+
+

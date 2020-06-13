@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+  }
+  
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+
+.mat-table{
+    background-color: white;
+    color: black;
+}
+
+.mat-table .mat-cell{
+   
+    color: black;
+}
+
+.mat-table .mat-header-cell{
+    color: blue;
+    font-weight: bold;
+}

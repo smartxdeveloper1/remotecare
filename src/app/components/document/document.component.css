@@ -1,0 +1,19 @@
+/* HEADING */
+.section.docs-heading {
+  padding: 60px 0;
+}
+
+/* Only stick if you can fit */
+@media (min-height: 300px) {
+  #mynavy {
+    position: sticky;
+    top: 30px;
+  }
+}
+
+#wrapper{
+  background: aliceblue !important;
+}
+/* .section {
+    padding: 180px 0;
+  } */
